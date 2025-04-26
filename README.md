@@ -1,4 +1,4 @@
-# Efficient Log Management and Rotation System 
+****# Efficient Log Management and Rotation System 
 
 ## Overview
 
@@ -20,14 +20,6 @@ Performance Monitoring: Tracking the health and performance of systems and appli
 Security Auditing: Monitoring logs for signs of unauthorized access or security incidents.
 
 Automation & Scalability: Automating routine tasks like log management to ensure efficient and scalable operations in cloud environments.
-
-## Setup
-
-### Prerequisites
-
-- **macOS or Linux-based system** with administrative (sudo) access.
-- **Bash** installed (default on most Unix-based systems).
-- Basic understanding of Bash scripting and system administration.
 
 ### Steps to Set Up
 
@@ -75,3 +67,4 @@ To automate log monitoring and rotation, you can use **cron jobs** to schedule t
 ### **Testing Log Monitoring**:
 To simulate an error and test the log monitoring functionality:
 echo "ERROR: Something broke!" | sudo tee -a /var/log/system.log
+****
