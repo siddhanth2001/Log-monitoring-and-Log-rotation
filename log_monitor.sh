@@ -15,7 +15,7 @@ grep -Ei "error|warn" "$LOGFILE" >> "$REPORT"
 
 # If the file is too big, move it
 SIZE=$(stat -f%z "$LOGFILE")
-if [ "$SIZE" -gt "$MAXSIZE" ]; then
+if [ -n "$SIZE" ] && [ "$SIZE" -gt "$MAXSIZE" ]; then
     TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
     mv "$LOGFILE" "$ROTATE_DIR/system_$TIMESTAMP.log"
     sudo touch "$LOGFILE"
@@ -25,4 +25,3 @@ else
 fi
 
 cat "$REPORT"
-
