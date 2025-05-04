@@ -10,7 +10,7 @@ Key Features:
 - **Report Generation**: Generates a report detailing errors, warnings, and log rotation status.
 - **Cross-Platform Compatibility**: Works on macOS and Linux-based systems.
 
-*******Why Is This Important for Cloud Support/Associate Roles?**
+********Why Is This Important**
 In cloud support or associate roles, managing logs is essential for:
 
 Troubleshooting: Quickly identifying and resolving system or service issues.
